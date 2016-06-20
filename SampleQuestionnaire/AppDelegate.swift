@@ -14,21 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     //navigationControllerを追加
     let mainTabBarController: MainTabbarController = MainTabbarController()
-    var navigationController: UINavigationController?
+//    var navigationController: UINavigationController?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        navigationController = UINavigationController(rootViewController: mainTabBarController)
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        UINavigationBar.appearance().barTintColor = UIColor.hex("bcbcff", alpha: 1.0)
-        
-        //navigationbarとviewがかぶらないようにしている。
-        navigationController!.navigationBar.translucent = false
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         //rootViewControllerにviewControllerを指定
-        self.window!.rootViewController = navigationController
+//        self.window!.rootViewController = navigationController
+        self.window!.rootViewController = mainTabBarController
         
         self.window!.makeKeyAndVisible()
         
