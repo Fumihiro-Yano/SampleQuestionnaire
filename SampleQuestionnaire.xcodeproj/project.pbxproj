@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72D33091CE4DC8B00BCD805 /* PieGraphDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D33081CE4DC8B00BCD805 /* PieGraphDemo.swift */; settings = {ASSET_TAGS = (); }; };
+		E72D330B1CE6107F00BCD805 /* MeterGraphDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D330A1CE6107F00BCD805 /* MeterGraphDemo.swift */; settings = {ASSET_TAGS = (); }; };
 		E7CD25831CE0B94100F45609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25821CE0B94100F45609 /* AppDelegate.swift */; };
 		E7CD25851CE0B94100F45609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25841CE0B94100F45609 /* ViewController.swift */; };
 		E7CD258A1CE0B94100F45609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7CD25891CE0B94100F45609 /* Assets.xcassets */; };
 		E7CD258D1CE0B94100F45609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CD258B1CE0B94100F45609 /* LaunchScreen.storyboard */; };
 		E7CD25981CE0B94100F45609 /* SampleQuestionnaireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25971CE0B94100F45609 /* SampleQuestionnaireTests.swift */; };
 		E7CD25A31CE0B94100F45609 /* SampleQuestionnaireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25A21CE0B94100F45609 /* SampleQuestionnaireUITests.swift */; };
+		E7CD25B11CE2282300F45609 /* BaseQuestionnaireListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25B01CE2282300F45609 /* BaseQuestionnaireListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E7CD25B31CE2290200F45609 /* BaseQuestionnaireListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CD25B21CE2290200F45609 /* BaseQuestionnaireListViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E7CD25B51CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25B41CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E7CD25B71CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CD25B61CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		E7CD25BA1CE37DA900F45609 /* right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7CD25B91CE37DA900F45609 /* right.jpg */; settings = {ASSET_TAGS = (); }; };
+		E7CD25BC1CE37DB200F45609 /* left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7CD25BB1CE37DB200F45609 /* left.jpg */; settings = {ASSET_TAGS = (); }; };
+		E7EF044C1D1589A400530175 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EF044B1D1589A400530175 /* MainTabbarController.swift */; settings = {ASSET_TAGS = (); }; };
+		E7EF044E1D15983700530175 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EF044D1D15983700530175 /* UIColor.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E72D33081CE4DC8B00BCD805 /* PieGraphDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieGraphDemo.swift; sourceTree = "<group>"; };
+		E72D330A1CE6107F00BCD805 /* MeterGraphDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterGraphDemo.swift; sourceTree = "<group>"; };
 		E7CD257F1CE0B94100F45609 /* SampleQuestionnaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleQuestionnaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CD25821CE0B94100F45609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7CD25841CE0B94100F45609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +57,14 @@
 		E7CD259E1CE0B94100F45609 /* SampleQuestionnaireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleQuestionnaireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CD25A21CE0B94100F45609 /* SampleQuestionnaireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleQuestionnaireUITests.swift; sourceTree = "<group>"; };
 		E7CD25A41CE0B94100F45609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7CD25B01CE2282300F45609 /* BaseQuestionnaireListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseQuestionnaireListViewController.swift; sourceTree = "<group>"; };
+		E7CD25B21CE2290200F45609 /* BaseQuestionnaireListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseQuestionnaireListViewController.xib; sourceTree = "<group>"; };
+		E7CD25B41CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseQuestionnaireListCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7CD25B61CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseQuestionnaireListCollectionViewCell.xib; sourceTree = "<group>"; };
+		E7CD25B91CE37DA900F45609 /* right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = right.jpg; sourceTree = "<group>"; };
+		E7CD25BB1CE37DB200F45609 /* left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = left.jpg; sourceTree = "<group>"; };
+		E7EF044B1D1589A400530175 /* MainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		E7EF044D1D15983700530175 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +115,20 @@
 		E7CD25811CE0B94100F45609 /* SampleQuestionnaire */ = {
 			isa = PBXGroup;
 			children = (
+				E7CD25B81CE37D3300F45609 /* images */,
 				E7CD25821CE0B94100F45609 /* AppDelegate.swift */,
+				E7EF044D1D15983700530175 /* UIColor.swift */,
 				E7CD25841CE0B94100F45609 /* ViewController.swift */,
 				E7CD25891CE0B94100F45609 /* Assets.xcassets */,
 				E7CD258B1CE0B94100F45609 /* LaunchScreen.storyboard */,
 				E7CD258E1CE0B94100F45609 /* Info.plist */,
+				E7CD25B01CE2282300F45609 /* BaseQuestionnaireListViewController.swift */,
+				E7EF044B1D1589A400530175 /* MainTabbarController.swift */,
+				E7CD25B21CE2290200F45609 /* BaseQuestionnaireListViewController.xib */,
+				E7CD25B41CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift */,
+				E7CD25B61CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib */,
+				E72D33081CE4DC8B00BCD805 /* PieGraphDemo.swift */,
+				E72D330A1CE6107F00BCD805 /* MeterGraphDemo.swift */,
 			);
 			path = SampleQuestionnaire;
 			sourceTree = "<group>";
@@ -120,6 +149,15 @@
 				E7CD25A41CE0B94100F45609 /* Info.plist */,
 			);
 			path = SampleQuestionnaireUITests;
+			sourceTree = "<group>";
+		};
+		E7CD25B81CE37D3300F45609 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E7CD25B91CE37DA900F45609 /* right.jpg */,
+				E7CD25BB1CE37DB200F45609 /* left.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CD258D1CE0B94100F45609 /* LaunchScreen.storyboard in Resources */,
+				E7CD25BC1CE37DB200F45609 /* left.jpg in Resources */,
+				E7CD25BA1CE37DA900F45609 /* right.jpg in Resources */,
+				E7CD25B71CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */,
 				E7CD258A1CE0B94100F45609 /* Assets.xcassets in Resources */,
+				E7CD25B31CE2290200F45609 /* BaseQuestionnaireListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72D33091CE4DC8B00BCD805 /* PieGraphDemo.swift in Sources */,
 				E7CD25851CE0B94100F45609 /* ViewController.swift in Sources */,
+				E72D330B1CE6107F00BCD805 /* MeterGraphDemo.swift in Sources */,
+				E7CD25B51CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */,
 				E7CD25831CE0B94100F45609 /* AppDelegate.swift in Sources */,
+				E7EF044E1D15983700530175 /* UIColor.swift in Sources */,
+				E7EF044C1D1589A400530175 /* MainTabbarController.swift in Sources */,
+				E7CD25B11CE2282300F45609 /* BaseQuestionnaireListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +524,7 @@
 				E7CD25A91CE0B94100F45609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7CD25AA1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SampleQuestionnaireTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +533,7 @@
 				E7CD25AC1CE0B94100F45609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7CD25AD1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SampleQuestionnaireUITests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +542,7 @@
 				E7CD25AF1CE0B94100F45609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
