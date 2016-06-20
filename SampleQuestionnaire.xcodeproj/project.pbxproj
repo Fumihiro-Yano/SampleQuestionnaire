@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E72D33091CE4DC8B00BCD805 /* PieGraphDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D33081CE4DC8B00BCD805 /* PieGraphDemo.swift */; settings = {ASSET_TAGS = (); }; };
 		E72D330B1CE6107F00BCD805 /* MeterGraphDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D330A1CE6107F00BCD805 /* MeterGraphDemo.swift */; settings = {ASSET_TAGS = (); }; };
+		E780D7921D182B0400581C19 /* BaseQuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E780D7901D182B0400581C19 /* BaseQuestionnaireViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E780D7931D182B0400581C19 /* BaseQuestionnaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E780D7911D182B0400581C19 /* BaseQuestionnaireViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		E7CD25831CE0B94100F45609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25821CE0B94100F45609 /* AppDelegate.swift */; };
 		E7CD25851CE0B94100F45609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25841CE0B94100F45609 /* ViewController.swift */; };
 		E7CD258A1CE0B94100F45609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7CD25891CE0B94100F45609 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		E72D33081CE4DC8B00BCD805 /* PieGraphDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieGraphDemo.swift; sourceTree = "<group>"; };
 		E72D330A1CE6107F00BCD805 /* MeterGraphDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterGraphDemo.swift; sourceTree = "<group>"; };
+		E780D7901D182B0400581C19 /* BaseQuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseQuestionnaireViewController.swift; sourceTree = "<group>"; };
+		E780D7911D182B0400581C19 /* BaseQuestionnaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseQuestionnaireViewController.xib; sourceTree = "<group>"; };
 		E7CD257F1CE0B94100F45609 /* SampleQuestionnaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleQuestionnaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CD25821CE0B94100F45609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7CD25841CE0B94100F45609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				E7CD258B1CE0B94100F45609 /* LaunchScreen.storyboard */,
 				E7CD258E1CE0B94100F45609 /* Info.plist */,
 				E7CD25B01CE2282300F45609 /* BaseQuestionnaireListViewController.swift */,
+				E780D7901D182B0400581C19 /* BaseQuestionnaireViewController.swift */,
+				E780D7911D182B0400581C19 /* BaseQuestionnaireViewController.xib */,
 				E7EF044B1D1589A400530175 /* MainTabbarController.swift */,
 				E7CD25B21CE2290200F45609 /* BaseQuestionnaireListViewController.xib */,
 				E7CD25B41CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift */,
@@ -268,6 +274,7 @@
 			files = (
 				E7CD258D1CE0B94100F45609 /* LaunchScreen.storyboard in Resources */,
 				E7CD25BC1CE37DB200F45609 /* left.jpg in Resources */,
+				E780D7931D182B0400581C19 /* BaseQuestionnaireViewController.xib in Resources */,
 				E7CD25BA1CE37DA900F45609 /* right.jpg in Resources */,
 				E7CD25B71CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */,
 				E7CD258A1CE0B94100F45609 /* Assets.xcassets in Resources */,
@@ -298,6 +305,7 @@
 			files = (
 				E72D33091CE4DC8B00BCD805 /* PieGraphDemo.swift in Sources */,
 				E7CD25851CE0B94100F45609 /* ViewController.swift in Sources */,
+				E780D7921D182B0400581C19 /* BaseQuestionnaireViewController.swift in Sources */,
 				E72D330B1CE6107F00BCD805 /* MeterGraphDemo.swift in Sources */,
 				E7CD25B51CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */,
 				E7CD25831CE0B94100F45609 /* AppDelegate.swift in Sources */,

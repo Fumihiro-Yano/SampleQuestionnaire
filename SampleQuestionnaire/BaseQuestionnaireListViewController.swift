@@ -92,5 +92,12 @@ class BaseQuestionnaireListViewController : UIViewController, UICollectionViewDa
         cell.layer.shadowRadius = 1.0
         return cell
     }
+    
+    //セルが選択された時に呼び出される。
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let baseQuestionnaireViewController: BaseQuestionnaireViewController = BaseQuestionnaireViewController()
+        self.navigationController!.pushViewController(baseQuestionnaireViewController, animated: true)
+        print("Num: \(indexPath.row)")
+    }
 
 }
