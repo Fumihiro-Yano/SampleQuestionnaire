@@ -12,20 +12,21 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    //navigationControllerを追加
     let mainTabBarController: MainTabbarController = MainTabbarController()
-//    var navigationController: UINavigationController?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        //rootViewControllerにviewControllerを指定
-//        self.window!.rootViewController = navigationController
         self.window!.rootViewController = mainTabBarController
         
         self.window!.makeKeyAndVisible()
         
+        //全体のNavigationBarの色を変更する
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().barTintColor = UIColor.hex("bcbcff", alpha: 1.0)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+
         return true
     }
 

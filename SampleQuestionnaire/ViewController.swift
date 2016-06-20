@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         graphView = PieGraphView(frame: CGRectMake(0, 30, 320, 320), params: params)
         self.view.addSubview(graphView)
         graphView.startAnimating()
+        self.navigationItem.title = "タイトル"
     }
     
     override func didReceiveMemoryWarning() {

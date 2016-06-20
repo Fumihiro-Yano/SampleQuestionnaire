@@ -24,6 +24,7 @@ class BaseQuestionnaireListViewController : UIViewController, UICollectionViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "質問一覧"
         questionnaireCollectionView.registerNib(UINib(nibName: "BaseQuestionnaireListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         questionnaireCollectionView.delegate = self
         questionnaireCollectionView.dataSource = self

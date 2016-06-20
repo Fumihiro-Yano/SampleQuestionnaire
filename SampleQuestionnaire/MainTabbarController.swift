@@ -27,9 +27,7 @@ class MainTabbarController: UITabBarController {
         nav = UINavigationController(rootViewController: firstView)
         nav2 = UINavigationController(rootViewController: secondView)
 
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        UINavigationBar.appearance().barTintColor = UIColor.hex("bcbcff", alpha: 1.0)
-        //navigationbarとviewがかぶらないようにしている。
+       //navigationbarとviewがかぶらないようにしている。
         nav!.navigationBar.translucent = false
         nav2!.navigationBar.translucent = false
         
