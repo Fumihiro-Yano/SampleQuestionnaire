@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //全体のNavigationBarの色を変更する
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        UINavigationBar.appearance().barTintColor = UIColor.hex("bcbcff", alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor.hex("3ca97f", alpha: 1.0)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
 
         return true

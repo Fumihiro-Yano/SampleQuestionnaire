@@ -14,10 +14,11 @@ let cellVerticalMargin:CGFloat = 5.0
 
 
 class BaseQuestionnaireListViewController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-
-    var questionArray : [String] = ["【ご当地メンズ】どちらの男性がかっこいい？？","【ゲット】仲間にするなら？？", "【ことわざ】木から落ちるのは？？", "【駄菓子】アマゾンで頼むなら？？", "【今日のオススメ】スカッとする映画は？？", "【美女判定】美人なのはどっち？？", "【海外俳優】付き合うなら", "【学習言語】勉強するならどっち？？", "【ケーキ対決】作るならどっち？？"]
-    var photo1NameArray : [String] = ["left.jpg","2_1.jpg", "3_1.jpg", "4_1.jpg", "5_1.jpg", "6_1.jpg", "7_1.jpg", "8_1.jpg", "9_1.jpg"]
-    var photo2NameArray : [String] = ["right.jpg","2_2.jpg", "3_2.jpg", "4_2.jpg", "5_2.jpg", "6_2.jpg", "7_2.jpg", "8_2.jpg", "9_2.jpg"]
+    var itemsCount: Int?
+    var imageName: String?
+//    var questionArray : [String] = ["【ご当地メンズ】どちらの男性がかっこいい？？","【ゲット】仲間にするなら？？", "【ことわざ】木から落ちるのは？？", "【駄菓子】アマゾンで頼むなら？？", "【今日のオススメ】スカッとする映画は？？", "【美女判定】美人なのはどっち？？", "【海外俳優】付き合うなら", "【学習言語】勉強するならどっち？？", "【ケーキ対決】作るならどっち？？"]
+//    var photo1NameArray : [String] = ["left.jpg","2_1.jpg", "3_1.jpg", "4_1.jpg", "5_1.jpg", "6_1.jpg", "7_1.jpg", "8_1.jpg", "9_1.jpg"]
+//    var photo2NameArray : [String] = ["right.jpg","2_2.jpg", "3_2.jpg", "4_2.jpg", "5_2.jpg", "6_2.jpg", "7_2.jpg", "8_2.jpg", "9_2.jpg"]
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var questionnaireCollectionView: UICollectionView!
@@ -55,7 +56,9 @@ class BaseQuestionnaireListViewController : UIViewController, UICollectionViewDa
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return questionArray.count
+        self.itemsCount = Datacontent().getItemsCount()
+        return self.itemsCount!
+//            questionArray.count
     }
     
     //セルの大きさをきめるメソッド
@@ -80,11 +83,11 @@ class BaseQuestionnaireListViewController : UIViewController, UICollectionViewDa
     //セルのテキストや色を指定するメソッド
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell : BaseQuestionnaireListCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BaseQuestionnaireListCollectionViewCell
-        let LeftImage = UIImage(named: photo1NameArray[indexPath.row])
-        let RightImage = UIImage(named: photo2NameArray[indexPath.row])
+        let LeftImage = UIImage(named: Datacontent().getImageName(indexPath.row, imageSide: 0))
+        let RightImage = UIImage(named: Datacontent().getImageName(indexPath.row, imageSide: 1))
         cell.collectionViewLeftImage.image = LeftImage
         cell.collectionViewRightImage.image = RightImage
-        cell.collectionViewQuestionnaireLabel.text = questionArray[indexPath.row]
+        cell.collectionViewQuestionnaireLabel.text = Datacontent().getTitle(indexPath.row)
         //cellに影をつける
         cell.layer.masksToBounds = false
         cell.layer.shadowOffset = CGSizeMake(0.0, 1.0)
@@ -96,6 +99,7 @@ class BaseQuestionnaireListViewController : UIViewController, UICollectionViewDa
     //セルが選択された時に呼び出される。
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let baseQuestionnaireViewController: BaseQuestionnaireViewController = BaseQuestionnaireViewController()
+        baseQuestionnaireViewController.indexRowAccessor = indexPath.row
         self.navigationController!.pushViewController(baseQuestionnaireViewController, animated: true)
         print("Num: \(indexPath.row)")
     }
