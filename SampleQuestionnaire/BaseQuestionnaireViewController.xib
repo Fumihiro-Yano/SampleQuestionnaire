@@ -69,15 +69,8 @@
                     </constraints>
                 </view>
                 <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0MU-Du-PSk">
-                    <rect key="frame" x="300" y="81" width="300" height="300"/>
+                    <rect key="frame" x="300" y="115" width="300" height="300"/>
                 </imageView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-Fp-ead">
-                    <rect key="frame" x="0.0" y="381" width="600" height="178"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut en </string>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Z3-UY-znt">
                     <rect key="frame" x="0.0" y="559" width="600" height="41"/>
                     <color key="backgroundColor" red="0.23529411764705882" green="0.66274509803921566" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
@@ -92,33 +85,61 @@
                     </connections>
                 </button>
                 <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="id2-6F-wgj">
-                    <rect key="frame" x="0.0" y="81" width="300" height="300"/>
+                    <rect key="frame" x="0.0" y="115" width="300" height="300"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="id2-6F-wgj" secondAttribute="height" multiplier="1:1" id="D5p-cF-f6x"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCQ-aG-5Ha">
+                    <rect key="frame" x="0.0" y="82" width="600" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画像をタップして選択" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzf-cW-iyd">
+                            <rect key="frame" x="225" y="6.5" width="150" height="18.5"/>
+                            <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Fzf-cW-iyd" firstAttribute="centerY" secondItem="pCQ-aG-5Ha" secondAttribute="centerY" id="THL-Qq-kTu"/>
+                        <constraint firstItem="Fzf-cW-iyd" firstAttribute="centerX" secondItem="pCQ-aG-5Ha" secondAttribute="centerX" id="aoy-Ji-ZG5"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-Fp-ead">
+                    <rect key="frame" x="0.0" y="416" width="600" height="143"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut en </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="0MU-Du-PSk" firstAttribute="trailing" secondItem="GFK-py-V5A" secondAttribute="trailing" id="0aR-tD-Fjf"/>
+                <constraint firstItem="id2-6F-wgj" firstAttribute="leading" secondItem="pCQ-aG-5Ha" secondAttribute="leading" id="0yp-ap-6nz"/>
                 <constraint firstItem="513-rU-3d5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2hP-Hp-yxp"/>
                 <constraint firstAttribute="bottom" secondItem="4Z3-UY-znt" secondAttribute="bottom" id="2vH-bS-OU7"/>
-                <constraint firstItem="4Z3-UY-znt" firstAttribute="top" secondItem="F6D-Fp-ead" secondAttribute="bottom" id="343-ap-XHT"/>
+                <constraint firstItem="id2-6F-wgj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="115" id="D3p-5X-4WS"/>
+                <constraint firstItem="id2-6F-wgj" firstAttribute="leading" secondItem="F6D-Fp-ead" secondAttribute="leading" id="DMK-1R-uY5"/>
+                <constraint firstItem="pCQ-aG-5Ha" firstAttribute="top" secondItem="GFK-py-V5A" secondAttribute="bottom" id="FSl-fn-nlP"/>
                 <constraint firstItem="id2-6F-wgj" firstAttribute="height" secondItem="0MU-Du-PSk" secondAttribute="height" id="Fgk-xG-hHr"/>
                 <constraint firstItem="id2-6F-wgj" firstAttribute="width" secondItem="0MU-Du-PSk" secondAttribute="width" id="FnI-mD-h9f"/>
+                <constraint firstItem="0MU-Du-PSk" firstAttribute="trailing" secondItem="F6D-Fp-ead" secondAttribute="trailing" id="GIU-Ab-QLB"/>
                 <constraint firstItem="id2-6F-wgj" firstAttribute="leading" secondItem="513-rU-3d5" secondAttribute="leading" id="KO0-8W-6hM"/>
+                <constraint firstItem="F6D-Fp-ead" firstAttribute="top" secondItem="id2-6F-wgj" secondAttribute="bottom" constant="1" id="OgX-Ja-vfs"/>
                 <constraint firstItem="0MU-Du-PSk" firstAttribute="trailing" secondItem="513-rU-3d5" secondAttribute="trailing" id="PQ2-Qm-iuo"/>
+                <constraint firstItem="id2-6F-wgj" firstAttribute="top" secondItem="pCQ-aG-5Ha" secondAttribute="bottom" constant="1" id="SH0-qP-DKM"/>
                 <constraint firstItem="id2-6F-wgj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SKC-gJ-FJl"/>
                 <constraint firstItem="4Z3-UY-znt" firstAttribute="leading" secondItem="id2-6F-wgj" secondAttribute="leading" id="SMq-hf-k2D"/>
-                <constraint firstItem="4Z3-UY-znt" firstAttribute="trailing" secondItem="F6D-Fp-ead" secondAttribute="trailing" id="SbU-iL-vya"/>
                 <constraint firstItem="id2-6F-wgj" firstAttribute="leading" secondItem="GFK-py-V5A" secondAttribute="leading" id="SdV-H7-bZw"/>
                 <constraint firstAttribute="trailing" secondItem="0MU-Du-PSk" secondAttribute="trailing" id="SzY-gU-dx8"/>
                 <constraint firstItem="GFK-py-V5A" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="U2Y-Go-JtT"/>
+                <constraint firstItem="0MU-Du-PSk" firstAttribute="top" secondItem="pCQ-aG-5Ha" secondAttribute="bottom" constant="1" id="Ucn-Fe-0AH"/>
                 <constraint firstItem="0MU-Du-PSk" firstAttribute="leading" secondItem="id2-6F-wgj" secondAttribute="trailing" id="Zdq-Dq-WK3"/>
-                <constraint firstItem="id2-6F-wgj" firstAttribute="top" secondItem="GFK-py-V5A" secondAttribute="bottom" constant="-1" id="afA-AA-KhE"/>
+                <constraint firstItem="4Z3-UY-znt" firstAttribute="top" secondItem="F6D-Fp-ead" secondAttribute="bottom" id="j5M-H9-hew"/>
                 <constraint firstItem="id2-6F-wgj" firstAttribute="top" secondItem="0MU-Du-PSk" secondAttribute="top" id="nYQ-jA-m2h"/>
-                <constraint firstItem="4Z3-UY-znt" firstAttribute="leading" secondItem="F6D-Fp-ead" secondAttribute="leading" id="nk0-ue-uDU"/>
-                <constraint firstItem="F6D-Fp-ead" firstAttribute="top" secondItem="0MU-Du-PSk" secondAttribute="bottom" id="xfu-QZ-cMm"/>
+                <constraint firstItem="0MU-Du-PSk" firstAttribute="trailing" secondItem="pCQ-aG-5Ha" secondAttribute="trailing" id="p0s-Ue-oVr"/>
                 <constraint firstItem="4Z3-UY-znt" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="zxW-Ne-miF"/>
             </constraints>
             <point key="canvasLocation" x="222" y="332"/>
