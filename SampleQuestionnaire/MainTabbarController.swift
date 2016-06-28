@@ -11,7 +11,7 @@ import UIKit
 //UITabBarControllerを継承
 class MainTabbarController: UITabBarController {
     var firstView: BaseQuestionnaireListViewController!
-    var secondView: ViewController!
+    var secondView: BaseResultViewController!
     var nav: UINavigationController?
     var nav2: UINavigationController?
 
@@ -20,12 +20,13 @@ class MainTabbarController: UITabBarController {
         super.viewDidLoad()
         
         firstView = BaseQuestionnaireListViewController()
-        secondView = ViewController()
+        secondView = BaseResultViewController()
         //表示するtabItemを指定（今回はデフォルトのItemを使用）
         firstView.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
         secondView.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 2)
         nav = UINavigationController(rootViewController: firstView)
         nav2 = UINavigationController(rootViewController: secondView)
+        
 
        //navigationbarとviewがかぶらないようにしている。
         nav!.navigationBar.translucent = false
