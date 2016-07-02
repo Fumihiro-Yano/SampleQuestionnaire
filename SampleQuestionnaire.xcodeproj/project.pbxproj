@@ -21,6 +21,8 @@
 		E7AC39321D1FF54C00DEEEA3 /* BaseResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC39301D1FF54C00DEEEA3 /* BaseResultViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E7AC39331D1FF54C00DEEEA3 /* BaseResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AC39311D1FF54C00DEEEA3 /* BaseResultViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		E7AC39391D22B51700DEEEA3 /* MeterGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC39381D22B51700DEEEA3 /* MeterGraphView.swift */; settings = {ASSET_TAGS = (); }; };
+		E7C216011D27499500FBA6A2 /* BaseQuestionnaireResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C215FF1D27499500FBA6A2 /* BaseQuestionnaireResultViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E7C216021D27499500FBA6A2 /* BaseQuestionnaireResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C216001D27499500FBA6A2 /* BaseQuestionnaireResultViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		E7CD25831CE0B94100F45609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25821CE0B94100F45609 /* AppDelegate.swift */; };
 		E7CD25851CE0B94100F45609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25841CE0B94100F45609 /* ViewController.swift */; };
 		E7CD258A1CE0B94100F45609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7CD25891CE0B94100F45609 /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		E7AC39301D1FF54C00DEEEA3 /* BaseResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResultViewController.swift; sourceTree = "<group>"; };
 		E7AC39311D1FF54C00DEEEA3 /* BaseResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseResultViewController.xib; sourceTree = "<group>"; };
 		E7AC39381D22B51700DEEEA3 /* MeterGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterGraphView.swift; sourceTree = "<group>"; };
+		E7C215FF1D27499500FBA6A2 /* BaseQuestionnaireResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseQuestionnaireResultViewController.swift; sourceTree = "<group>"; };
+		E7C216001D27499500FBA6A2 /* BaseQuestionnaireResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseQuestionnaireResultViewController.xib; sourceTree = "<group>"; };
 		E7CD257F1CE0B94100F45609 /* SampleQuestionnaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleQuestionnaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CD25821CE0B94100F45609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7CD25841CE0B94100F45609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7C216031D27DA3100FBA6A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7CD25B01CE2282300F45609 /* BaseQuestionnaireListViewController.swift */,
+				E7C215FF1D27499500FBA6A2 /* BaseQuestionnaireResultViewController.swift */,
+				E780D7901D182B0400581C19 /* BaseQuestionnaireViewController.swift */,
+				E7AC39301D1FF54C00DEEEA3 /* BaseResultViewController.swift */,
+				E7EF044B1D1589A400530175 /* MainTabbarController.swift */,
+				E7AC39061D1D613400DEEEA3 /* lineUpModalViewController.swift */,
+				E780D7941D19A48900581C19 /* ModalViewController.swift */,
+				E780D7961D19A4BD00581C19 /* CustomPresentationController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E7C216041D27DBBF00FBA6A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7CD25B21CE2290200F45609 /* BaseQuestionnaireListViewController.xib */,
+				E7AC39071D1D613400DEEEA3 /* lineUpModalViewController.xib */,
+				E780D79A1D1AEDD200581C19 /* ModalViewController.xib */,
+				E780D7911D182B0400581C19 /* BaseQuestionnaireViewController.xib */,
+				E7C216001D27499500FBA6A2 /* BaseQuestionnaireResultViewController.xib */,
+				E7AC39311D1FF54C00DEEEA3 /* BaseResultViewController.xib */,
+				E7CD25B61CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib */,
+				E7CD25B41CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		E7CD25761CE0B94100F45609 = {
 			isa = PBXGroup;
 			children = (
@@ -146,23 +180,11 @@
 				E7CD25891CE0B94100F45609 /* Assets.xcassets */,
 				E7CD258B1CE0B94100F45609 /* LaunchScreen.storyboard */,
 				E7CD258E1CE0B94100F45609 /* Info.plist */,
-				E7CD25B01CE2282300F45609 /* BaseQuestionnaireListViewController.swift */,
 				E7AC39041D1B9BD600DEEEA3 /* Datacontent.swift */,
-				E780D7941D19A48900581C19 /* ModalViewController.swift */,
-				E7AC39061D1D613400DEEEA3 /* lineUpModalViewController.swift */,
-				E7AC39071D1D613400DEEEA3 /* lineUpModalViewController.xib */,
-				E780D79A1D1AEDD200581C19 /* ModalViewController.xib */,
-				E780D7961D19A4BD00581C19 /* CustomPresentationController.swift */,
-				E780D7901D182B0400581C19 /* BaseQuestionnaireViewController.swift */,
-				E780D7911D182B0400581C19 /* BaseQuestionnaireViewController.xib */,
-				E7AC39301D1FF54C00DEEEA3 /* BaseResultViewController.swift */,
-				E7AC39311D1FF54C00DEEEA3 /* BaseResultViewController.xib */,
+				E7C216041D27DBBF00FBA6A2 /* View */,
+				E7C216031D27DA3100FBA6A2 /* Controller */,
 				E7AC39381D22B51700DEEEA3 /* MeterGraphView.swift */,
 				E780D7981D1AC09B00581C19 /* CustomAnimatedTransitioning.swift */,
-				E7EF044B1D1589A400530175 /* MainTabbarController.swift */,
-				E7CD25B21CE2290200F45609 /* BaseQuestionnaireListViewController.xib */,
-				E7CD25B41CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift */,
-				E7CD25B61CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib */,
 				E72D33081CE4DC8B00BCD805 /* PieGraphDemo.swift */,
 				E72D330A1CE6107F00BCD805 /* MeterGraphDemo.swift */,
 			);
@@ -309,6 +331,7 @@
 				E780D79B1D1AEDD200581C19 /* ModalViewController.xib in Resources */,
 				E7CD25B71CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */,
 				E7AC39331D1FF54C00DEEEA3 /* BaseResultViewController.xib in Resources */,
+				E7C216021D27499500FBA6A2 /* BaseQuestionnaireResultViewController.xib in Resources */,
 				E7CD258A1CE0B94100F45609 /* Assets.xcassets in Resources */,
 				E7CD25B31CE2290200F45609 /* BaseQuestionnaireListViewController.xib in Resources */,
 				E7AC39091D1D613400DEEEA3 /* lineUpModalViewController.xib in Resources */,
@@ -341,6 +364,7 @@
 				E780D7971D19A4BD00581C19 /* CustomPresentationController.swift in Sources */,
 				E7AC39081D1D613400DEEEA3 /* lineUpModalViewController.swift in Sources */,
 				E7AC39321D1FF54C00DEEEA3 /* BaseResultViewController.swift in Sources */,
+				E7C216011D27499500FBA6A2 /* BaseQuestionnaireResultViewController.swift in Sources */,
 				E780D7921D182B0400581C19 /* BaseQuestionnaireViewController.swift in Sources */,
 				E72D330B1CE6107F00BCD805 /* MeterGraphDemo.swift in Sources */,
 				E7CD25B51CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */,

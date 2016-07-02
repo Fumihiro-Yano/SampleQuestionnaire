@@ -80,6 +80,12 @@ class BaseQuestionnaireViewController: UIViewController {
         modalViewController.selecedImageTagAccessor = selectedTag
         presentViewController(modalViewController, animated: true, completion: nil)
     }
+    
+    func pushBaseQuestionnaireResultViewController() {
+        let baseQuestionnaireResultViewController: BaseQuestionnaireResultViewController = BaseQuestionnaireResultViewController()
+        baseQuestionnaireResultViewController.indexRowAccessor = self.indexRow
+        self.navigationController!.pushViewController(baseQuestionnaireResultViewController, animated: true)
+    }
 }
 
 extension BaseQuestionnaireViewController: UIViewControllerTransitioningDelegate {
@@ -95,6 +101,7 @@ extension BaseQuestionnaireViewController {
     }
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        self.pushBaseQuestionnaireResultViewController()
         return CustomAnimatedTransitioning(isPresent: false, imgView: tappedImage)
     }
 }

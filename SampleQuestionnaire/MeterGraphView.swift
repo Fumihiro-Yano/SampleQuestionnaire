@@ -12,16 +12,18 @@ class MeterGraphView: UIView {
 
     var _params:[Dictionary<String,AnyObject>]!
     var _end_point:CGFloat!
-    var _width:CGFloat!
     var _change_point:CGFloat!
     var maxMovingPoint:CGFloat!
     
+    var meterWidth:CGFloat!
     var image: UIImage!
     var isFirstDrawView:Bool!
     var currentUpMeter:String!
-    let sideMargin:CGFloat = 10.0
+    let sideMargin:CGFloat = 0.0
     let hundredPercent:CGFloat = 100.0
-    let contextHight:CGFloat = 80
+    var contextHight:CGFloat = 100
+    
+    var count:Int = 0
     
     
     required init(coder aDecoder: NSCoder) {
@@ -32,15 +34,36 @@ class MeterGraphView: UIView {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clearColor();
         let myBoundSize: CGSize = UIScreen.mainScreen().bounds.size
-        let width = myBoundSize.width
         isFirstDrawView = true
         _params = params
-        _width = width - (sideMargin * 2)
+        meterWidth = myBoundSize.width - (sideMargin * 2)
         _end_point = sideMargin
     }
     
+    //ViewContorllerから呼び出す
+    func startAnimating(params:[Dictionary<String,AnyObject>]){
+        var plusParams = getPlusParams(params)
+        var value:CGFloat!
+        _params = plusParams.palams
+        if (plusParams.movingMeter == "left") {
+            value = plusParams.palams[0]["value"]! as! CGFloat
+            maxMovingPoint = sideMargin + meterWidth * (value/10)
+            currentUpMeter = plusParams.movingMeter
+            let displayLink = CADisplayLink(target: self, selector: Selector("updateLeftMeter:"))
+            displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
+        }
+        else if (plusParams.movingMeter == "right") {
+            value = plusParams.palams[0]["value"]! as! CGFloat
+            maxMovingPoint = meterWidth - (meterWidth * (value/10))
+            currentUpMeter = plusParams.movingMeter
+            let displayLink = CADisplayLink(target: self, selector: Selector("updateRightMeter:"))
+            displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
+        }
+    }
+    
+    //左側のメータを動かす
     func updateLeftMeter(link:AnyObject) {
-        let onePercentWidth = _width/hundredPercent
+        let onePercentWidth = meterWidth/hundredPercent
         _end_point = _end_point + onePercentWidth
         if(_end_point - sideMargin > maxMovingPoint) {
             link.invalidate()
@@ -53,8 +76,9 @@ class MeterGraphView: UIView {
         }
     }
     
+    //右側のメータを動かす
     func updateRightMeter(link:AnyObject){
-        let onePercentWidth = _width/hundredPercent
+        let onePercentWidth = meterWidth/hundredPercent
         _end_point = _end_point - onePercentWidth
         if(_end_point - sideMargin < maxMovingPoint) {
             link.invalidate()
@@ -67,6 +91,21 @@ class MeterGraphView: UIView {
         }
     }
     
+    //メーターの変化値を取得するメソッド
+    func getPlusParams(params:[Dictionary<String,AnyObject>]) -> (palams: [Dictionary<String,AnyObject>], movingMeter: String){
+        var plusParams = [Dictionary<String,AnyObject>]()
+        var meter: String!
+        if((params[0]["value"]! as! Int) >= (_params[0]["value"]! as! Int)) {
+            plusParams.append(["value":params[0]["value"]! as! Int,"color":UIColor.hex("a93c66", alpha: 1.0)])
+            meter = "left"
+        }
+        else if ((params[0]["value"]! as! Int) <= (_params[0]["value"]! as! Int)) {
+            plusParams.append(["value":params[1]["value"]! as! Int,"color":UIColor.hex("3ca97f", alpha: 1.0)])
+            meter = "right"
+        }
+        return (plusParams, meter)
+    }
+    
     func getCurrentImage() -> UIImage {
         // nilだったら再度描画させる
         if image == nil {
@@ -74,28 +113,6 @@ class MeterGraphView: UIView {
             UIGraphicsEndImageContext()
         }
         return image!
-    }
-    
-    
-    //ViewContorllerから呼び出す
-    func startAnimating(params:[Dictionary<String,AnyObject>]){
-        var pm = getPlusParams(params)
-        var value:CGFloat!
-        _params = pm.palams
-        if (pm.movingMeter == "left") {
-            value = pm.palams[0]["value"]! as! CGFloat
-            maxMovingPoint = sideMargin + _width * (value/10)
-            currentUpMeter = pm.movingMeter
-            let displayLink = CADisplayLink(target: self, selector: Selector("updateLeftMeter:"))
-            displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
-        }
-        else if (pm.movingMeter == "right") {
-            value = pm.palams[0]["value"]! as! CGFloat
-            maxMovingPoint = _width - (_width * (value/10))
-            currentUpMeter = pm.movingMeter
-            let displayLink = CADisplayLink(target: self, selector: Selector("updateRightMeter:"))
-            displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
-        }
     }
     
     //最初のグラフを作成するメソッド
@@ -112,9 +129,10 @@ class MeterGraphView: UIView {
         var num:Int = 0
         for dic : Dictionary<String,AnyObject> in _params {
             let value = CGFloat(dic["value"] as! Float)
-            end_point = start_point + _width * (value/max);
+            end_point = start_point + meterWidth * (value/max);
             num += 1
             if(num == 1) {
+                //ここで片方のend_pointを変更点として取得している
                 print("\(num)回目")
                 _change_point = end_point
                 _end_point = _change_point
@@ -134,21 +152,6 @@ class MeterGraphView: UIView {
         image.drawInRect(self.bounds)
     }
     
-    //メーターの変化値を取得するメソッド
-    func getPlusParams(params:[Dictionary<String,AnyObject>]) -> (palams: [Dictionary<String,AnyObject>], movingMeter: String){
-        var plusParams = [Dictionary<String,AnyObject>]()
-        var meter: String!
-        if((params[0]["value"]! as! Int) >= (_params[0]["value"]! as! Int)) {
-            plusParams.append(["value":params[0]["value"]! as! Int,"color":UIColor.hex("a93c66", alpha: 1.0)])
-            meter = "left"
-        }
-        else if ((params[0]["value"]! as! Int) <= (_params[0]["value"]! as! Int)) {
-            plusParams.append(["value":params[1]["value"]! as! Int,"color":UIColor.hex("3ca97f", alpha: 1.0)])
-            meter = "right"
-        }
-        return (plusParams, meter)
-    }
-    
     //増える方のグラフを上書きで描画するメソッド
     func drawPlusGraphView(rect: CGRect) {
         var start_point:CGFloat = sideMargin;
@@ -158,7 +161,10 @@ class MeterGraphView: UIView {
         
         for dic : Dictionary<String,AnyObject> in _params {
             let value = CGFloat(dic["value"] as! Float)
+            self.count += 1
+            print("This is count",count)
             print("This is value",value)
+            print("This is _end_point",_end_point)
             start_point = _change_point
             end_point = maxMovingPoint
             if (currentUpMeter == "left") {

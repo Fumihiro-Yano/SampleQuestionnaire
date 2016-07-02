@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class ModalViewController: UIViewController {
     @IBOutlet weak var selectedImageView: UIImageView!
     @IBOutlet weak var checkingImageView: UIImageView!

@@ -15,8 +15,12 @@ class BaseResultViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var meterGraphContentView: UIView!
     var graphView:MeterGraphView!;
-    var rightMeterLabel:UILabel!;
-    var leftMeterLabel:UILabel!;
+//    var rightMeterLabel:UILabel!;
+//    var leftMeterLabel:UILabel!;
+    
+    @IBOutlet weak var leftMeterLabel: UILabel!
+    
+    @IBOutlet weak var rightMeterLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,20 +38,15 @@ class BaseResultViewController: UIViewController {
          var params = [Dictionary<String,AnyObject>]()
          params.append(["value":5,"color":UIColor.hex("a93c66", alpha: 1.0)])
          params.append(["value":5,"color":UIColor.hex("3ca97f", alpha: 1.0)])
-         graphView = MeterGraphView(frame: CGRectMake(0, 30, meterGraphContentViewWidth, 80), params: params)
+         graphView = MeterGraphView(frame: CGRectMake(0, 0, meterGraphContentViewWidth, 40), params: params)
          print("this is graphView origin x : \(self.graphView.bounds.origin.x)")
          print("this is graphView width : \(self.graphView.bounds.width)")
          print("this is View width : \(self.view.bounds.width)")
          let rightCount:Int = 90
          let leftCount:Int = 10
-         rightMeterLabel = UILabel(frame: CGRectMake((self.view.bounds.width - 70),60,60,50))
-         leftMeterLabel = UILabel(frame: CGRectMake((self.view.bounds.origin.x + 10),60,60,50))
-         rightMeterLabel.text = "\(rightCount)票 B"
+         rightMeterLabel.text = "B \(rightCount)票"
          leftMeterLabel.text = "A \(leftCount)票"
          self.meterGraphContentView.addSubview(graphView)
-         self.meterGraphContentView.addSubview(rightMeterLabel)
-         self.meterGraphContentView.addSubview(leftMeterLabel)
-        
     }
     
     override func viewDidAppear(animated: Bool) {
