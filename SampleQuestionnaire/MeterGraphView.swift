@@ -49,14 +49,14 @@ class MeterGraphView: UIView {
             value = plusParams.palams[0]["value"]! as! CGFloat
             maxMovingPoint = sideMargin + meterWidth * (value/10)
             currentUpMeter = plusParams.movingMeter
-            let displayLink = CADisplayLink(target: self, selector: Selector("updateLeftMeter:"))
+            let displayLink = CADisplayLink(target: self, selector: #selector(MeterGraphView.updateLeftMeter(_:)))
             displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
         }
         else if (plusParams.movingMeter == "right") {
             value = plusParams.palams[0]["value"]! as! CGFloat
             maxMovingPoint = meterWidth - (meterWidth * (value/10))
             currentUpMeter = plusParams.movingMeter
-            let displayLink = CADisplayLink(target: self, selector: Selector("updateRightMeter:"))
+            let displayLink = CADisplayLink(target: self, selector: #selector(MeterGraphView.updateRightMeter(_:)))
             displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
         }
     }

@@ -49,7 +49,7 @@ class BaseQuestionnaireResultViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         //tabbarとCollectionViewの最後がかぶらないように
-        if self.respondsToSelector("edgesForExtendedLayout") {
+        if self.respondsToSelector(Selector("edgesForExtendedLayout")) {
             self.edgesForExtendedLayout = UIRectEdge.None
         }
     }

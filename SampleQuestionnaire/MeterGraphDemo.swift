@@ -26,7 +26,7 @@ class MeterPieGraphView: UIView {
     }
 
     func startAnimating(){
-        let displayLink = CADisplayLink(target: self, selector: Selector("update:"))
+        let displayLink = CADisplayLink(target: self, selector: #selector(MeterPieGraphView.update(_:)))
         displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
     }
 

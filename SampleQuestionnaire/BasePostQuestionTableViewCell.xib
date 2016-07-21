@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasePostQuestionTableViewCell" rowHeight="150" id="KGk-i7-Jjw" customClass="BasePostQuestionTableViewCell" customModule="SampleQuestionnaire" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVb-hI-V9W" customClass="TitleTextFieldContainer" customModule="SampleQuestionnaire" customModuleProvider="target">
+                        <rect key="frame" x="18" y="8" width="284" height="44"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="タイトル" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-lJ-QkE">
+                                <rect key="frame" x="0.0" y="7" width="284" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="G3M-Ku-fQy"/>
+                            <constraint firstAttribute="trailing" secondItem="8Bv-lJ-QkE" secondAttribute="trailing" id="PUm-Ra-xEC"/>
+                            <constraint firstItem="8Bv-lJ-QkE" firstAttribute="leading" secondItem="zVb-hI-V9W" secondAttribute="leading" id="RGd-TG-bv7"/>
+                            <constraint firstItem="8Bv-lJ-QkE" firstAttribute="centerX" secondItem="zVb-hI-V9W" secondAttribute="centerX" id="SLc-Hv-Esz"/>
+                            <constraint firstItem="8Bv-lJ-QkE" firstAttribute="top" secondItem="zVb-hI-V9W" secondAttribute="top" constant="7" id="Wol-6H-SI4"/>
+                            <constraint firstItem="8Bv-lJ-QkE" firstAttribute="centerY" secondItem="zVb-hI-V9W" secondAttribute="centerY" id="oAh-4d-Ehk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderBottomWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fW7-Y7-zYh">
+                        <rect key="frame" x="13" y="52" width="294" height="90"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="質問の詳細" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKA-gh-ytt">
+                        <rect key="frame" x="18" y="62" width="85" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="fW7-Y7-zYh" secondAttribute="bottom" constant="-0.5" id="0LT-4d-gEv"/>
+                    <constraint firstItem="zVb-hI-V9W" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2qU-62-F9q"/>
+                    <constraint firstItem="NKA-gh-ytt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="8ox-S3-dUz"/>
+                    <constraint firstItem="zVb-hI-V9W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9PR-51-Ri3"/>
+                    <constraint firstItem="fW7-Y7-zYh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="BDM-7K-xuk"/>
+                    <constraint firstItem="zVb-hI-V9W" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Hcp-7e-Xam"/>
+                    <constraint firstItem="NKA-gh-ytt" firstAttribute="top" secondItem="zVb-hI-V9W" secondAttribute="bottom" constant="10" id="hcI-iO-9pN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fW7-Y7-zYh" secondAttribute="trailing" constant="5" id="kCw-db-4F1"/>
+                    <constraint firstItem="zVb-hI-V9W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="rqy-ku-9Ai"/>
+                    <constraint firstItem="fW7-Y7-zYh" firstAttribute="top" secondItem="zVb-hI-V9W" secondAttribute="bottom" id="uuH-HU-nd0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="questionDetailsTextView" destination="fW7-Y7-zYh" id="WvD-kU-VVO"/>
+                <outlet property="textViewPlaceholderLable" destination="NKA-gh-ytt" id="ciR-jn-gHf"/>
+                <outlet property="titleTextField" destination="8Bv-lJ-QkE" id="hcN-b0-EGe"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="270"/>
+        </tableViewCell>
+    </objects>
+</document>

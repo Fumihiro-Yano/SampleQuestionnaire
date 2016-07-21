@@ -38,7 +38,7 @@ class PieGraphView: UIView {
     }
     
     func startAnimating(){
-        let displayLink = CADisplayLink(target: self, selector: Selector("update:"))
+        let displayLink = CADisplayLink(target: self, selector: #selector(PieGraphView.update(_:)))
         displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
     }
     

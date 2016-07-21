@@ -11,7 +11,7 @@ import UIKit
 //UITabBarControllerを継承
 class MainTabbarController: UITabBarController {
     var firstView: BaseQuestionnaireListViewController!
-    var secondView: ViewController!
+    var secondView: BasePostQuestionViewController!
     var thirdView: ViewController!
     var fourthView: lineUpModalViewController!
     var nav: UINavigationController?
@@ -23,7 +23,7 @@ class MainTabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         firstView = BaseQuestionnaireListViewController()
-        secondView = ViewController()
+        secondView = BasePostQuestionViewController()
         thirdView = ViewController()
         fourthView = lineUpModalViewController()
         

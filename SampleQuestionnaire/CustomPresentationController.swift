@@ -18,7 +18,7 @@ final class CustomPresentationController: UIPresentationController {
         }
         
         overlayView.frame = containerView.bounds
-        overlayView.gestureRecognizers = [UITapGestureRecognizer(target: self, action: "overlayViewDidTouch:")]
+        overlayView.gestureRecognizers = [UITapGestureRecognizer(target: self, action: #selector(CustomPresentationController.overlayViewDidTouch(_:)))]
         overlayView.backgroundColor = UIColor.blackColor()
         overlayView.alpha = 0.0
         containerView.insertSubview(overlayView, atIndex: 0)
