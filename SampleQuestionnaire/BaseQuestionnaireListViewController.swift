@@ -1,6 +1,6 @@
 //
 //  BaseQuestionnaireList.swift
-//  SampleQuestionnaire
+//  Swallow
 //
 //  Created by 矢野史洋 on 2016/05/10.
 //  Copyright © 2016年 矢野史洋. All rights reserved.

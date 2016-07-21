@@ -35,8 +35,8 @@
 		E7CD25851CE0B94100F45609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25841CE0B94100F45609 /* ViewController.swift */; };
 		E7CD258A1CE0B94100F45609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7CD25891CE0B94100F45609 /* Assets.xcassets */; };
 		E7CD258D1CE0B94100F45609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CD258B1CE0B94100F45609 /* LaunchScreen.storyboard */; };
-		E7CD25981CE0B94100F45609 /* SampleQuestionnaireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25971CE0B94100F45609 /* SampleQuestionnaireTests.swift */; };
-		E7CD25A31CE0B94100F45609 /* SampleQuestionnaireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25A21CE0B94100F45609 /* SampleQuestionnaireUITests.swift */; };
+		E7CD25981CE0B94100F45609 /* SwallowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25971CE0B94100F45609 /* SwallowTests.swift */; };
+		E7CD25A31CE0B94100F45609 /* SwallowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25A21CE0B94100F45609 /* SwallowUITests.swift */; };
 		E7CD25B11CE2282300F45609 /* BaseQuestionnaireListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25B01CE2282300F45609 /* BaseQuestionnaireListViewController.swift */; };
 		E7CD25B31CE2290200F45609 /* BaseQuestionnaireListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CD25B21CE2290200F45609 /* BaseQuestionnaireListViewController.xib */; };
 		E7CD25B51CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CD25B41CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift */; };
@@ -93,17 +93,17 @@
 		E7C216121D295A1000FBA6A2 /* BasePostQuestionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasePostQuestionTableViewCell.xib; sourceTree = "<group>"; };
 		E7C216151D2BEABB00FBA6A2 /* BasePostQuestionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePostQuestionHeaderView.swift; sourceTree = "<group>"; };
 		E7C216171D2BEAEF00FBA6A2 /* BasePostQuestionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasePostQuestionHeaderView.xib; sourceTree = "<group>"; };
-		E7CD257F1CE0B94100F45609 /* SampleQuestionnaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleQuestionnaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CD257F1CE0B94100F45609 /* Swallow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swallow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CD25821CE0B94100F45609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7CD25841CE0B94100F45609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7CD25891CE0B94100F45609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7CD258C1CE0B94100F45609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7CD258E1CE0B94100F45609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7CD25931CE0B94100F45609 /* SampleQuestionnaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleQuestionnaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7CD25971CE0B94100F45609 /* SampleQuestionnaireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleQuestionnaireTests.swift; sourceTree = "<group>"; };
+		E7CD25931CE0B94100F45609 /* Swallow.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swallow.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CD25971CE0B94100F45609 /* SwallowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SwallowTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E7CD25991CE0B94100F45609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7CD259E1CE0B94100F45609 /* SampleQuestionnaireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleQuestionnaireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7CD25A21CE0B94100F45609 /* SampleQuestionnaireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleQuestionnaireUITests.swift; sourceTree = "<group>"; };
+		E7CD259E1CE0B94100F45609 /* Swallow.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swallow.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CD25A21CE0B94100F45609 /* SwallowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SwallowUITests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E7CD25A41CE0B94100F45609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7CD25B01CE2282300F45609 /* BaseQuestionnaireListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseQuestionnaireListViewController.swift; sourceTree = "<group>"; };
 		E7CD25B21CE2290200F45609 /* BaseQuestionnaireListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseQuestionnaireListViewController.xib; sourceTree = "<group>"; };
@@ -196,9 +196,9 @@
 		E7CD25761CE0B94100F45609 = {
 			isa = PBXGroup;
 			children = (
-				E7CD25811CE0B94100F45609 /* SampleQuestionnaire */,
-				E7CD25961CE0B94100F45609 /* SampleQuestionnaireTests */,
-				E7CD25A11CE0B94100F45609 /* SampleQuestionnaireUITests */,
+				E7CD25811CE0B94100F45609 /* Swallow */,
+				E7CD25961CE0B94100F45609 /* SwallowTest */,
+				E7CD25A11CE0B94100F45609 /* SwallowUITests */,
 				E7CD25801CE0B94100F45609 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -206,14 +206,14 @@
 		E7CD25801CE0B94100F45609 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7CD257F1CE0B94100F45609 /* SampleQuestionnaire.app */,
-				E7CD25931CE0B94100F45609 /* SampleQuestionnaireTests.xctest */,
-				E7CD259E1CE0B94100F45609 /* SampleQuestionnaireUITests.xctest */,
+				E7CD257F1CE0B94100F45609 /* Swallow.app */,
+				E7CD25931CE0B94100F45609 /* Swallow.xctest */,
+				E7CD259E1CE0B94100F45609 /* Swallow.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7CD25811CE0B94100F45609 /* SampleQuestionnaire */ = {
+		E7CD25811CE0B94100F45609 /* Swallow */ = {
 			isa = PBXGroup;
 			children = (
 				E7CD25B81CE37D3300F45609 /* images */,
@@ -232,24 +232,27 @@
 				E72D33081CE4DC8B00BCD805 /* PieGraphDemo.swift */,
 				E72D330A1CE6107F00BCD805 /* MeterGraphDemo.swift */,
 			);
+			name = Swallow;
 			path = SampleQuestionnaire;
 			sourceTree = "<group>";
 		};
-		E7CD25961CE0B94100F45609 /* SampleQuestionnaireTests */ = {
+		E7CD25961CE0B94100F45609 /* SwallowTest */ = {
 			isa = PBXGroup;
 			children = (
-				E7CD25971CE0B94100F45609 /* SampleQuestionnaireTests.swift */,
+				E7CD25971CE0B94100F45609 /* SwallowTests.swift */,
 				E7CD25991CE0B94100F45609 /* Info.plist */,
 			);
+			name = SwallowTest;
 			path = SampleQuestionnaireTests;
 			sourceTree = "<group>";
 		};
-		E7CD25A11CE0B94100F45609 /* SampleQuestionnaireUITests */ = {
+		E7CD25A11CE0B94100F45609 /* SwallowUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E7CD25A21CE0B94100F45609 /* SampleQuestionnaireUITests.swift */,
+				E7CD25A21CE0B94100F45609 /* SwallowUITests.swift */,
 				E7CD25A41CE0B94100F45609 /* Info.plist */,
 			);
+			name = SwallowUITests;
 			path = SampleQuestionnaireUITests;
 			sourceTree = "<group>";
 		};
@@ -265,9 +268,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E7CD257E1CE0B94100F45609 /* SampleQuestionnaire */ = {
+		E7CD257E1CE0B94100F45609 /* Swallow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7CD25A71CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SampleQuestionnaire" */;
+			buildConfigurationList = E7CD25A71CE0B94100F45609 /* Build configuration list for PBXNativeTarget "Swallow" */;
 			buildPhases = (
 				E7CD257B1CE0B94100F45609 /* Sources */,
 				E7CD257C1CE0B94100F45609 /* Frameworks */,
@@ -277,14 +280,14 @@
 			);
 			dependencies = (
 			);
-			name = SampleQuestionnaire;
+			name = Swallow;
 			productName = SampleQuestionnaire;
-			productReference = E7CD257F1CE0B94100F45609 /* SampleQuestionnaire.app */;
+			productReference = E7CD257F1CE0B94100F45609 /* Swallow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E7CD25921CE0B94100F45609 /* SampleQuestionnaireTests */ = {
+		E7CD25921CE0B94100F45609 /* SwallowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7CD25AA1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SampleQuestionnaireTests" */;
+			buildConfigurationList = E7CD25AA1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SwallowTests" */;
 			buildPhases = (
 				E7CD258F1CE0B94100F45609 /* Sources */,
 				E7CD25901CE0B94100F45609 /* Frameworks */,
@@ -295,14 +298,14 @@
 			dependencies = (
 				E7CD25951CE0B94100F45609 /* PBXTargetDependency */,
 			);
-			name = SampleQuestionnaireTests;
+			name = SwallowTests;
 			productName = SampleQuestionnaireTests;
-			productReference = E7CD25931CE0B94100F45609 /* SampleQuestionnaireTests.xctest */;
+			productReference = E7CD25931CE0B94100F45609 /* Swallow.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E7CD259D1CE0B94100F45609 /* SampleQuestionnaireUITests */ = {
+		E7CD259D1CE0B94100F45609 /* SwallowUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7CD25AD1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SampleQuestionnaireUITests" */;
+			buildConfigurationList = E7CD25AD1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SwallowUITests" */;
 			buildPhases = (
 				E7CD259A1CE0B94100F45609 /* Sources */,
 				E7CD259B1CE0B94100F45609 /* Frameworks */,
@@ -313,9 +316,9 @@
 			dependencies = (
 				E7CD25A01CE0B94100F45609 /* PBXTargetDependency */,
 			);
-			name = SampleQuestionnaireUITests;
+			name = SwallowUITests;
 			productName = SampleQuestionnaireUITests;
-			productReference = E7CD259E1CE0B94100F45609 /* SampleQuestionnaireUITests.xctest */;
+			productReference = E7CD259E1CE0B94100F45609 /* Swallow.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -343,7 +346,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E7CD257A1CE0B94100F45609 /* Build configuration list for PBXProject "SampleQuestionnaire" */;
+			buildConfigurationList = E7CD257A1CE0B94100F45609 /* Build configuration list for PBXProject "Swallow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -356,9 +359,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E7CD257E1CE0B94100F45609 /* SampleQuestionnaire */,
-				E7CD25921CE0B94100F45609 /* SampleQuestionnaireTests */,
-				E7CD259D1CE0B94100F45609 /* SampleQuestionnaireUITests */,
+				E7CD257E1CE0B94100F45609 /* Swallow */,
+				E7CD25921CE0B94100F45609 /* SwallowTests */,
+				E7CD259D1CE0B94100F45609 /* SwallowUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -439,7 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7CD25981CE0B94100F45609 /* SampleQuestionnaireTests.swift in Sources */,
+				E7CD25981CE0B94100F45609 /* SwallowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7CD25A31CE0B94100F45609 /* SampleQuestionnaireUITests.swift in Sources */,
+				E7CD25A31CE0B94100F45609 /* SwallowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,12 +459,12 @@
 /* Begin PBXTargetDependency section */
 		E7CD25951CE0B94100F45609 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E7CD257E1CE0B94100F45609 /* SampleQuestionnaire */;
+			target = E7CD257E1CE0B94100F45609 /* Swallow */;
 			targetProxy = E7CD25941CE0B94100F45609 /* PBXContainerItemProxy */;
 		};
 		E7CD25A01CE0B94100F45609 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E7CD257E1CE0B94100F45609 /* SampleQuestionnaire */;
+			target = E7CD257E1CE0B94100F45609 /* Swallow */;
 			targetProxy = E7CD259F1CE0B94100F45609 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -566,11 +569,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SampleQuestionnaire/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = glooob.SampleQuestionnaire;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = glooob.Swallow;
+				PRODUCT_NAME = Swallow;
 			};
 			name = Debug;
 		};
@@ -579,11 +583,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = SampleQuestionnaire/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = glooob.SampleQuestionnaire;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = glooob.Swallow;
+				PRODUCT_NAME = Swallow;
 			};
 			name = Release;
 		};
@@ -594,8 +599,8 @@
 				INFOPLIST_FILE = SampleQuestionnaireTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = glooob.SampleQuestionnaireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleQuestionnaire.app/SampleQuestionnaire";
+				PRODUCT_NAME = Swallow;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swallow.app/Swallow";
 			};
 			name = Debug;
 		};
@@ -606,8 +611,8 @@
 				INFOPLIST_FILE = SampleQuestionnaireTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = glooob.SampleQuestionnaireTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleQuestionnaire.app/SampleQuestionnaire";
+				PRODUCT_NAME = Swallow;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swallow.app/Swallow";
 			};
 			name = Release;
 		};
@@ -617,7 +622,7 @@
 				INFOPLIST_FILE = SampleQuestionnaireUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = glooob.SampleQuestionnaireUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Swallow;
 				TEST_TARGET_NAME = SampleQuestionnaire;
 				USES_XCTRUNNER = YES;
 			};
@@ -629,7 +634,7 @@
 				INFOPLIST_FILE = SampleQuestionnaireUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = glooob.SampleQuestionnaireUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Swallow;
 				TEST_TARGET_NAME = SampleQuestionnaire;
 				USES_XCTRUNNER = YES;
 			};
@@ -638,7 +643,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E7CD257A1CE0B94100F45609 /* Build configuration list for PBXProject "SampleQuestionnaire" */ = {
+		E7CD257A1CE0B94100F45609 /* Build configuration list for PBXProject "Swallow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7CD25A51CE0B94100F45609 /* Debug */,
@@ -647,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7CD25A71CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SampleQuestionnaire" */ = {
+		E7CD25A71CE0B94100F45609 /* Build configuration list for PBXNativeTarget "Swallow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7CD25A81CE0B94100F45609 /* Debug */,
@@ -656,7 +661,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7CD25AA1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SampleQuestionnaireTests" */ = {
+		E7CD25AA1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SwallowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7CD25AB1CE0B94100F45609 /* Debug */,
@@ -665,7 +670,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7CD25AD1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SampleQuestionnaireUITests" */ = {
+		E7CD25AD1CE0B94100F45609 /* Build configuration list for PBXNativeTarget "SwallowUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7CD25AE1CE0B94100F45609 /* Debug */,

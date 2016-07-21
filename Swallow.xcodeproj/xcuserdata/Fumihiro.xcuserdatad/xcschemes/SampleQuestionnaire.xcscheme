@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E7CD257E1CE0B94100F45609"
-               BuildableName = "SampleQuestionnaire.app"
-               BlueprintName = "SampleQuestionnaire"
-               ReferencedContainer = "container:SampleQuestionnaire.xcodeproj">
+               BuildableName = "Swallow.app"
+               BlueprintName = "Swallow"
+               ReferencedContainer = "container:Swallow.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E7CD25921CE0B94100F45609"
-               BuildableName = "SampleQuestionnaireTests.xctest"
-               BlueprintName = "SampleQuestionnaireTests"
-               ReferencedContainer = "container:SampleQuestionnaire.xcodeproj">
+               BuildableName = "Swallow.xctest"
+               BlueprintName = "SwallowTests"
+               ReferencedContainer = "container:Swallow.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E7CD259D1CE0B94100F45609"
-               BuildableName = "SampleQuestionnaireUITests.xctest"
-               BlueprintName = "SampleQuestionnaireUITests"
-               ReferencedContainer = "container:SampleQuestionnaire.xcodeproj">
+               BuildableName = "Swallow.xctest"
+               BlueprintName = "SwallowUITests"
+               ReferencedContainer = "container:Swallow.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E7CD257E1CE0B94100F45609"
-            BuildableName = "SampleQuestionnaire.app"
-            BlueprintName = "SampleQuestionnaire"
-            ReferencedContainer = "container:SampleQuestionnaire.xcodeproj">
+            BuildableName = "Swallow.app"
+            BlueprintName = "Swallow"
+            ReferencedContainer = "container:Swallow.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E7CD257E1CE0B94100F45609"
-            BuildableName = "SampleQuestionnaire.app"
-            BlueprintName = "SampleQuestionnaire"
-            ReferencedContainer = "container:SampleQuestionnaire.xcodeproj">
+            BuildableName = "Swallow.app"
+            BlueprintName = "Swallow"
+            ReferencedContainer = "container:Swallow.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E7CD257E1CE0B94100F45609"
-            BuildableName = "SampleQuestionnaire.app"
-            BlueprintName = "SampleQuestionnaire"
-            ReferencedContainer = "container:SampleQuestionnaire.xcodeproj">
+            BuildableName = "Swallow.app"
+            BlueprintName = "Swallow"
+            ReferencedContainer = "container:Swallow.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -106,6 +106,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Swallow"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

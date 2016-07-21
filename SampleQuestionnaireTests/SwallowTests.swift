@@ -1,15 +1,16 @@
 //
-//  SampleQuestionnaireTests.swift
-//  SampleQuestionnaireTests
+//  SwallowTests.swift
+//  SwallowTests
 //
 //  Created by 矢野史洋 on 2016/05/09.
 //  Copyright © 2016年 矢野史洋. All rights reserved.
 //
 
 import XCTest
-@testable import SampleQuestionnaire
 
-class SampleQuestionnaireTests: XCTestCase {
+//@testable import Swallow
+
+class SwallowTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

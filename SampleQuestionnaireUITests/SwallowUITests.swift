@@ -1,6 +1,6 @@
 //
-//  SampleQuestionnaireUITests.swift
-//  SampleQuestionnaireUITests
+//  SwallowUITests.swift
+//  SwallowUITests
 //
 //  Created by 矢野史洋 on 2016/05/09.
 //  Copyright © 2016年 矢野史洋. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class SampleQuestionnaireUITests: XCTestCase {
+class SwallowUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
