@@ -232,8 +232,7 @@
 				E72D33081CE4DC8B00BCD805 /* PieGraphDemo.swift */,
 				E72D330A1CE6107F00BCD805 /* MeterGraphDemo.swift */,
 			);
-			name = Swallow;
-			path = SampleQuestionnaire;
+			path = Swallow;
 			sourceTree = "<group>";
 		};
 		E7CD25961CE0B94100F45609 /* SwallowTest */ = {
@@ -243,7 +242,7 @@
 				E7CD25991CE0B94100F45609 /* Info.plist */,
 			);
 			name = SwallowTest;
-			path = SampleQuestionnaireTests;
+			path = SwallowTests;
 			sourceTree = "<group>";
 		};
 		E7CD25A11CE0B94100F45609 /* SwallowUITests */ = {
@@ -252,8 +251,7 @@
 				E7CD25A21CE0B94100F45609 /* SwallowUITests.swift */,
 				E7CD25A41CE0B94100F45609 /* Info.plist */,
 			);
-			name = SwallowUITests;
-			path = SampleQuestionnaireUITests;
+			path = SwallowUITests;
 			sourceTree = "<group>";
 		};
 		E7CD25B81CE37D3300F45609 /* images */ = {
@@ -570,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_TESTABILITY = YES;
-				INFOPLIST_FILE = SampleQuestionnaire/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Swallow/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = glooob.Swallow;
@@ -584,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_TESTABILITY = YES;
-				INFOPLIST_FILE = SampleQuestionnaire/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Swallow/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = glooob.Swallow;
