@@ -13,7 +13,7 @@ class MainTabbarController: UITabBarController {
     var firstView: BaseQuestionnaireListViewController!
     var secondView: BasePostQuestionViewController!
     var thirdView: ViewController!
-    var fourthView: lineUpModalViewController!
+    var fourthView: MyPageViewController!
     var nav: UINavigationController?
     var nav2: UINavigationController?
     var nav3: UINavigationController?
@@ -25,7 +25,25 @@ class MainTabbarController: UITabBarController {
         firstView = BaseQuestionnaireListViewController()
         secondView = BasePostQuestionViewController()
         thirdView = ViewController()
-        fourthView = lineUpModalViewController()
+        fourthView = MyPageViewController()
+        
+        let tc = TabPageViewController()
+        let vc1 = BaseQuestionnaireListViewController()
+        let vc2 = UIViewController()
+        vc2.view.backgroundColor = UIColor(red: 252/255, green: 150/255, blue: 149/255, alpha: 1.0)
+        let vc3 = UIViewController()
+        vc3.view.backgroundColor = UIColor(red: 149/255, green: 218/255, blue: 252/255, alpha: 1.0)
+        let vc4 = UIViewController()
+        vc4.view.backgroundColor = UIColor(red: 149/255, green: 252/255, blue: 197/255, alpha: 1.0)
+        let vc5 = UIViewController()
+        vc5.view.backgroundColor = UIColor(red: 252/255, green: 182/255, blue: 106/255, alpha: 1.0)
+        tc.tabItems = [(vc1, "Mon."), (vc2, "Tue."), (vc3, "Wed."), (vc4, "Thu."), (vc5, "Fri.")]
+        tc.isInfinity = true
+        var option = TabPageOption()
+        option.currentColor = UIColor(red: 246/255, green: 175/255, blue: 32/255, alpha: 1.0)
+        tc.option = option
+        
+        
         
         // fontの設定
         let fontFamily: UIFont! = UIFont.systemFontOfSize(10)
@@ -46,12 +64,12 @@ class MainTabbarController: UITabBarController {
         
         
         //表示するtabItemを指定
-        firstView.tabBarItem = UITabBarItem(title: "答える", image: UIImage(named: "check_questionnaire_tab_icon.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "check_questionnaire_tab_icon.png"))
+        tc.tabBarItem = UITabBarItem(title: "答える", image: UIImage(named: "check_questionnaire_tab_icon.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "check_questionnaire_tab_icon.png"))
         secondView.tabBarItem = UITabBarItem(title: "質問する", image: UIImage(named: "question_tab_icon.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "question_tab_icon.png"))
-        thirdView.tabBarItem = UITabBarItem(title: "累計結果", image: UIImage(named: "result_tab.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "result_tab@2.png"))
+        thirdView.tabBarItem = UITabBarItem(title: "通知", image: UIImage(named: "alarm.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "result_tab@2.png"))
         fourthView.tabBarItem = UITabBarItem(title: "マイページ", image: UIImage(named: "user_tab.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "user_tab.png"))
         
-        nav = UINavigationController(rootViewController: firstView)
+        nav = UINavigationController(rootViewController: tc)
         nav2 = UINavigationController(rootViewController: secondView)
         nav3 = UINavigationController(rootViewController: thirdView)
         nav4 = UINavigationController(rootViewController: fourthView)

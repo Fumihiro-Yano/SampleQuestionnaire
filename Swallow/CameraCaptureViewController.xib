@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraCaptureViewController" customModule="SampleQuestionnaire" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraCaptureViewController" customModule="Swallow" customModuleProvider="target">
             <connections>
                 <outlet property="albumButton" destination="xyw-ia-mSM" id="Ggg-rV-1D0"/>
                 <outlet property="captureButton" destination="Fzh-OO-N7N" id="t4R-pc-x2M"/>

@@ -8,12 +8,11 @@
 
 import UIKit
 
-let reuseIdentifier = "BaseQuestionnaireListCollectionViewCell"
-let cellHorizontalMargin:CGFloat = 10.0
-let cellVerticalMargin:CGFloat = 5.0
-
-
-class BaseQuestionnaireListViewController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class BaseQuestionnaireListViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    let reuseIdentifier = "BaseQuestionnaireListCollectionViewCell"
+    let cellHorizontalMargin:CGFloat = 10.0
+    let cellVerticalMargin:CGFloat = 5.0
+    
     var itemsCount: Int?
     var imageName: String?
     
@@ -102,5 +101,4 @@ class BaseQuestionnaireListViewController : UIViewController, UICollectionViewDa
         self.navigationController!.pushViewController(baseQuestionnaireViewController, animated: true)
         print("Num: \(indexPath.row)")
     }
-
 }

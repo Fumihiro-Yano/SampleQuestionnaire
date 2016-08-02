@@ -17,6 +17,17 @@
 		E780D7971D19A4BD00581C19 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E780D7961D19A4BD00581C19 /* CustomPresentationController.swift */; };
 		E780D7991D1AC09B00581C19 /* CustomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = E780D7981D1AC09B00581C19 /* CustomAnimatedTransitioning.swift */; };
 		E780D79B1D1AEDD200581C19 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E780D79A1D1AEDD200581C19 /* ModalViewController.xib */; };
+		E794F0841D412A1800013673 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794F0821D412A1800013673 /* MyPageViewController.swift */; };
+		E794F0851D412A1800013673 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E794F0831D412A1800013673 /* MyPageViewController.xib */; };
+		E794F0881D4902C600013673 /* AvatarBackgroundCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794F0861D4902C600013673 /* AvatarBackgroundCollectionReusableView.swift */; };
+		E794F0891D4902C600013673 /* AvatarBackgroundCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E794F0871D4902C600013673 /* AvatarBackgroundCollectionReusableView.xib */; };
+		E794F0941D4F9D4C00013673 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794F08D1D4F9D4C00013673 /* TabCollectionCell.swift */; };
+		E794F0951D4F9D4C00013673 /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E794F08E1D4F9D4C00013673 /* TabCollectionCell.xib */; };
+		E794F0961D4F9D4C00013673 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794F08F1D4F9D4C00013673 /* TabPageOption.swift */; };
+		E794F0981D4F9D4C00013673 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794F0911D4F9D4C00013673 /* TabPageViewController.swift */; };
+		E794F0991D4F9D4C00013673 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794F0921D4F9D4C00013673 /* TabView.swift */; };
+		E794F09A1D4F9D4C00013673 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E794F0931D4F9D4C00013673 /* TabView.xib */; };
+		E794F0A11D4FA01300013673 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794F0A01D4FA01300013673 /* TestViewController.swift */; };
 		E7AC39051D1B9BD600DEEEA3 /* Datacontent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC39041D1B9BD600DEEEA3 /* Datacontent.swift */; };
 		E7AC39081D1D613400DEEEA3 /* lineUpModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC39061D1D613400DEEEA3 /* lineUpModalViewController.swift */; };
 		E7AC39091D1D613400DEEEA3 /* lineUpModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AC39071D1D613400DEEEA3 /* lineUpModalViewController.xib */; };
@@ -79,6 +90,17 @@
 		E780D7961D19A4BD00581C19 /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
 		E780D7981D1AC09B00581C19 /* CustomAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		E780D79A1D1AEDD200581C19 /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		E794F0821D412A1800013673 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		E794F0831D412A1800013673 /* MyPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
+		E794F0861D4902C600013673 /* AvatarBackgroundCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarBackgroundCollectionReusableView.swift; sourceTree = "<group>"; };
+		E794F0871D4902C600013673 /* AvatarBackgroundCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarBackgroundCollectionReusableView.xib; sourceTree = "<group>"; };
+		E794F08D1D4F9D4C00013673 /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabCollectionCell.swift; path = ../../TabPageViewController/Pod/Classes/TabCollectionCell.swift; sourceTree = "<group>"; };
+		E794F08E1D4F9D4C00013673 /* TabCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabCollectionCell.xib; path = ../../TabPageViewController/Pod/Classes/TabCollectionCell.xib; sourceTree = "<group>"; };
+		E794F08F1D4F9D4C00013673 /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabPageOption.swift; path = ../../TabPageViewController/Pod/Classes/TabPageOption.swift; sourceTree = "<group>"; };
+		E794F0911D4F9D4C00013673 /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabPageViewController.swift; path = ../../TabPageViewController/Pod/Classes/TabPageViewController.swift; sourceTree = "<group>"; };
+		E794F0921D4F9D4C00013673 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = ../../TabPageViewController/Pod/Classes/TabView.swift; sourceTree = "<group>"; };
+		E794F0931D4F9D4C00013673 /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabView.xib; path = ../../TabPageViewController/Pod/Classes/TabView.xib; sourceTree = "<group>"; };
+		E794F0A01D4FA01300013673 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E7AC39041D1B9BD600DEEEA3 /* Datacontent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datacontent.swift; sourceTree = "<group>"; };
 		E7AC39061D1D613400DEEEA3 /* lineUpModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lineUpModalViewController.swift; sourceTree = "<group>"; };
 		E7AC39071D1D613400DEEEA3 /* lineUpModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = lineUpModalViewController.xib; sourceTree = "<group>"; };
@@ -144,10 +166,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E794F09B1D4F9D5800013673 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				E794F08D1D4F9D4C00013673 /* TabCollectionCell.swift */,
+				E794F08E1D4F9D4C00013673 /* TabCollectionCell.xib */,
+				E794F08F1D4F9D4C00013673 /* TabPageOption.swift */,
+				E794F0911D4F9D4C00013673 /* TabPageViewController.swift */,
+				E794F0921D4F9D4C00013673 /* TabView.swift */,
+				E794F0931D4F9D4C00013673 /* TabView.xib */,
+			);
+			name = TabView;
+			sourceTree = "<group>";
+		};
 		E7C216031D27DA3100FBA6A2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				E7CD25B01CE2282300F45609 /* BaseQuestionnaireListViewController.swift */,
+				E794F0821D412A1800013673 /* MyPageViewController.swift */,
 				E7DA51721D367D1C00F09711 /* CameraCaptureViewController.swift */,
 				E7DA51741D367D6800F09711 /* CameraCaptureViewController.xib */,
 				E7C215FF1D27499500FBA6A2 /* BaseQuestionnaireResultViewController.swift */,
@@ -158,7 +194,6 @@
 				E780D7941D19A48900581C19 /* ModalViewController.swift */,
 				E780D7961D19A4BD00581C19 /* CustomPresentationController.swift */,
 				E7C2160D1D29567D00FBA6A2 /* BasePostQuestionViewController.swift */,
-				E7C2160E1D29567D00FBA6A2 /* BasePostQuestionViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -166,8 +201,10 @@
 		E7C216041D27DBBF00FBA6A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E794F09B1D4F9D5800013673 /* TabView */,
 				E7C67FF81D3FAB9000DF9CB1 /* Cells */,
 				E7CD25B21CE2290200F45609 /* BaseQuestionnaireListViewController.xib */,
+				E794F0831D412A1800013673 /* MyPageViewController.xib */,
 				E7AC39071D1D613400DEEEA3 /* lineUpModalViewController.xib */,
 				E780D79A1D1AEDD200581C19 /* ModalViewController.xib */,
 				E780D7911D182B0400581C19 /* BaseQuestionnaireViewController.xib */,
@@ -176,6 +213,7 @@
 				E7050F751D337D9800042545 /* TitleTextFieldContainer.swift */,
 				E7C216151D2BEABB00FBA6A2 /* BasePostQuestionHeaderView.swift */,
 				E7C216171D2BEAEF00FBA6A2 /* BasePostQuestionHeaderView.xib */,
+				E7C2160E1D29567D00FBA6A2 /* BasePostQuestionViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -189,6 +227,8 @@
 				E7DA516E1D353FE100F09711 /* BasePostQuestionCategoryTableViewCell.swift */,
 				E7CD25B61CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib */,
 				E7CD25B41CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift */,
+				E794F0861D4902C600013673 /* AvatarBackgroundCollectionReusableView.swift */,
+				E794F0871D4902C600013673 /* AvatarBackgroundCollectionReusableView.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -220,6 +260,7 @@
 				E7CD25821CE0B94100F45609 /* AppDelegate.swift */,
 				E7EF044D1D15983700530175 /* UIColor.swift */,
 				E7CD25841CE0B94100F45609 /* ViewController.swift */,
+				E794F0A01D4FA01300013673 /* TestViewController.swift */,
 				E7050F771D33EF4C00042545 /* UIScreenUtil.swift */,
 				E7CD25891CE0B94100F45609 /* Assets.xcassets */,
 				E7CD258B1CE0B94100F45609 /* LaunchScreen.storyboard */,
@@ -376,12 +417,16 @@
 				E7CD25BA1CE37DA900F45609 /* right.jpg in Resources */,
 				E780D79B1D1AEDD200581C19 /* ModalViewController.xib in Resources */,
 				E7CD25B71CE22C7C00F45609 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */,
+				E794F0951D4F9D4C00013673 /* TabCollectionCell.xib in Resources */,
 				E7AC39331D1FF54C00DEEEA3 /* BaseResultViewController.xib in Resources */,
 				E7C216101D29567D00FBA6A2 /* BasePostQuestionViewController.xib in Resources */,
+				E794F09A1D4F9D4C00013673 /* TabView.xib in Resources */,
+				E794F0851D412A1800013673 /* MyPageViewController.xib in Resources */,
 				E7C216021D27499500FBA6A2 /* BaseQuestionnaireResultViewController.xib in Resources */,
 				E7CD258A1CE0B94100F45609 /* Assets.xcassets in Resources */,
 				E7C216141D295A1000FBA6A2 /* BasePostQuestionTableViewCell.xib in Resources */,
 				E7DA51751D367D6800F09711 /* CameraCaptureViewController.xib in Resources */,
+				E794F0891D4902C600013673 /* AvatarBackgroundCollectionReusableView.xib in Resources */,
 				E7CD25B31CE2290200F45609 /* BaseQuestionnaireListViewController.xib in Resources */,
 				E7C216181D2BEAEF00FBA6A2 /* BasePostQuestionHeaderView.xib in Resources */,
 				E7AC39091D1D613400DEEEA3 /* lineUpModalViewController.xib in Resources */,
@@ -409,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E794F0841D412A1800013673 /* MyPageViewController.swift in Sources */,
 				E7DA51731D367D1C00F09711 /* CameraCaptureViewController.swift in Sources */,
 				E72D33091CE4DC8B00BCD805 /* PieGraphDemo.swift in Sources */,
 				E7CD25851CE0B94100F45609 /* ViewController.swift in Sources */,
@@ -418,14 +464,20 @@
 				E7050F761D337D9800042545 /* TitleTextFieldContainer.swift in Sources */,
 				E7C216011D27499500FBA6A2 /* BaseQuestionnaireResultViewController.swift in Sources */,
 				E7050F781D33EF4C00042545 /* UIScreenUtil.swift in Sources */,
+				E794F0991D4F9D4C00013673 /* TabView.swift in Sources */,
 				E780D7921D182B0400581C19 /* BaseQuestionnaireViewController.swift in Sources */,
 				E72D330B1CE6107F00BCD805 /* MeterGraphDemo.swift in Sources */,
+				E794F0881D4902C600013673 /* AvatarBackgroundCollectionReusableView.swift in Sources */,
+				E794F0941D4F9D4C00013673 /* TabCollectionCell.swift in Sources */,
 				E7C216161D2BEABB00FBA6A2 /* BasePostQuestionHeaderView.swift in Sources */,
+				E794F0961D4F9D4C00013673 /* TabPageOption.swift in Sources */,
 				E7C216131D295A1000FBA6A2 /* BasePostQuestionTableViewCell.swift in Sources */,
 				E7CD25B51CE22C6F00F45609 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */,
+				E794F0981D4F9D4C00013673 /* TabPageViewController.swift in Sources */,
 				E7CD25831CE0B94100F45609 /* AppDelegate.swift in Sources */,
 				E7DA516F1D353FE100F09711 /* BasePostQuestionCategoryTableViewCell.swift in Sources */,
 				E7AC39391D22B51700DEEEA3 /* MeterGraphView.swift in Sources */,
+				E794F0A11D4FA01300013673 /* TestViewController.swift in Sources */,
 				E7C2160F1D29567D00FBA6A2 /* BasePostQuestionViewController.swift in Sources */,
 				E780D7951D19A48900581C19 /* ModalViewController.swift in Sources */,
 				E7EF044E1D15983700530175 /* UIColor.swift in Sources */,

@@ -6,7 +6,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasePostQuestionHeaderView" customModule="SampleQuestionnaire" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasePostQuestionHeaderView" customModule="Swallow" customModuleProvider="target">
             <connections>
                 <outlet property="headerView" destination="vgG-7H-DYq" id="pid-pg-P5F"/>
                 <outlet property="label" destination="Oor-nM-ibi" id="hDY-Uh-sux"/>

@@ -42,5 +42,6 @@ class TitleTextFieldContainer: UIView {
         borderBottom.frame = CGRectMake(0, height - borderBottomWidth, UIScreenUtil.screenWidth(), borderBottomWidth)
         borderBottom.backgroundColor = borderColor.CGColor
         layer.addSublayer(borderBottom)
+        self.layer.masksToBounds = true
     }
 }

@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasePostQuestionViewController" customModule="SampleQuestionnaire" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasePostQuestionViewController" customModule="Swallow" customModuleProvider="target">
             <connections>
                 <outlet property="postQuestionTableView" destination="SFA-b8-bG7" id="Wll-2Z-cVG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
