@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="AvatarBackgroundCollectionReusableView" customModule="Swallow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9P-OO-Jil">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-By-vNY">
+                    <rect key="frame" x="96" y="36" width="128" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aIS-By-vNY" secondAttribute="height" multiplier="1:1" id="06K-Kv-br5"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dac-fq-Jcr">
+                    <rect key="frame" x="0.0" y="199" width="320" height="81"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2gl-No-Vvs">
+                            <rect key="frame" x="30" y="27" width="260" height="29"/>
+                            <segments>
+                                <segment title="質問履歴"/>
+                                <segment title="回答履歴"/>
+                                <segment title="Therd"/>
+                            </segments>
+                            <color key="tintColor" red="0.23529411759999999" green="0.66274509800000003" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="selectedSegmentControl:" destination="U6b-Vx-4bR" eventType="valueChanged" id="vr7-Yi-nSg"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="2gl-No-Vvs" firstAttribute="centerX" secondItem="Dac-fq-Jcr" secondAttribute="centerX" id="3YI-7h-iAI"/>
+                        <constraint firstItem="2gl-No-Vvs" firstAttribute="centerY" secondItem="Dac-fq-Jcr" secondAttribute="centerY" id="VWH-wC-9ja"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fumi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-oh-ftM">
+                    <rect key="frame" x="96" y="170" width="128" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="aIS-By-vNY" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="1ag-4Q-BVP"/>
+                <constraint firstItem="c9P-OO-Jil" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="45Z-Cz-y1g"/>
+                <constraint firstAttribute="trailing" secondItem="gYR-oh-ftM" secondAttribute="trailing" constant="96" id="7pf-mX-sw6"/>
+                <constraint firstItem="c9P-OO-Jil" firstAttribute="centerY" secondItem="aIS-By-vNY" secondAttribute="centerY" id="DcF-bZ-O6e"/>
+                <constraint firstItem="aIS-By-vNY" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="96" id="Dtb-Bt-nPz"/>
+                <constraint firstAttribute="trailing" secondItem="c9P-OO-Jil" secondAttribute="trailing" id="HgK-mw-IpU"/>
+                <constraint firstItem="c9P-OO-Jil" firstAttribute="trailing" secondItem="Dac-fq-Jcr" secondAttribute="trailing" id="MDc-cd-xTu"/>
+                <constraint firstItem="c9P-OO-Jil" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="PE2-Kg-GlS"/>
+                <constraint firstItem="c9P-OO-Jil" firstAttribute="leading" secondItem="Dac-fq-Jcr" secondAttribute="leading" id="TKY-gW-AYw"/>
+                <constraint firstItem="c9P-OO-Jil" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Uww-lY-cVY"/>
+                <constraint firstAttribute="trailing" secondItem="aIS-By-vNY" secondAttribute="trailing" constant="96" id="Vwr-wy-jw7"/>
+                <constraint firstItem="aIS-By-vNY" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="36" id="W16-o1-OME"/>
+                <constraint firstAttribute="trailing" secondItem="2gl-No-Vvs" secondAttribute="trailing" constant="30" id="WVj-OE-6ex"/>
+                <constraint firstAttribute="bottom" secondItem="Dac-fq-Jcr" secondAttribute="bottom" id="fOJ-re-8Gg"/>
+                <constraint firstItem="gYR-oh-ftM" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="hSo-cI-bcn"/>
+                <constraint firstItem="gYR-oh-ftM" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="96" id="kuh-T9-Vr9"/>
+                <constraint firstItem="2gl-No-Vvs" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="30" id="xHI-is-SMW"/>
+                <constraint firstItem="gYR-oh-ftM" firstAttribute="top" secondItem="aIS-By-vNY" secondAttribute="bottom" constant="6" id="xWr-GP-h8O"/>
+                <constraint firstItem="Dac-fq-Jcr" firstAttribute="top" secondItem="aIS-By-vNY" secondAttribute="bottom" constant="35" id="xuI-4Y-jLf"/>
+            </constraints>
+            <connections>
+                <outlet property="avatarBackgroundImageView" destination="c9P-OO-Jil" id="aaS-dC-Man"/>
+                <outlet property="avatarImageView" destination="aIS-By-vNY" id="Oed-RF-azs"/>
+                <outlet property="myPageCollectionViewCellSegmentedControl" destination="2gl-No-Vvs" id="9X6-Rz-Rw6"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="407"/>
+        </collectionReusableView>
+    </objects>
+</document>

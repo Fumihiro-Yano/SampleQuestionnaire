@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "722C8ACB60A1C78B475504256032141F7328440E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1727E4289C5767126F9918CD4ACC62052F2850A0" : 0,
+    "722C8ACB60A1C78B475504256032141F7328440E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AB232623-1DF5-422C-8400-D65C5670446D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1727E4289C5767126F9918CD4ACC62052F2850A0" : "TabPageViewController\/",
+    "722C8ACB60A1C78B475504256032141F7328440E" : "Swallow\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Swallow",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Swallow.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/EndouMari\/TabPageViewController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1727E4289C5767126F9918CD4ACC62052F2850A0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Fumihiro-Yano\/Swallow.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "722C8ACB60A1C78B475504256032141F7328440E"
+    }
+  ]
+}
